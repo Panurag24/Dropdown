@@ -23,9 +23,9 @@ const Dropdown = ({ items }) => {
         {selectedItem ? selectedItem : 'Select an option'}
       </button>
       {isOpen && (
-        // eslint-disable-next-line react/jsx-no-comment-textnodes
+        
         <ul className="dropdown-list">
-          // eslint-disable-next-line react/prop-types
+          
           {items.map((item, index) => (
             <li key={index} onClick={() => handleItemClick(item)}>
               {item}
